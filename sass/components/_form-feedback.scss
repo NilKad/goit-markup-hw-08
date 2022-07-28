@@ -1,0 +1,102 @@
+.form-feedback__title {
+  @extend %title;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  /* color: $main-text-second-color); */
+}
+
+.form-feedback__field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+
+  @extend %form-feedback-fontstyle;
+
+  color: $main-text-color;
+
+  &--textarea,
+  &--checkbox {
+    margin-bottom: 20px;
+  }
+  &--checkbox {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
+
+.form-feedback__input {
+  @extend %form-feedback-input-textarea;
+  height: 40px;
+  margin-top: 4px;
+  padding-left: 42px;
+  padding-right: 16px;
+
+  &:focus {
+    @extend %form-feedback-focus;
+  }
+}
+
+.form-feedback__textarea {
+  @extend %form-feedback-input-textarea;
+  margin-top: 4px;
+  padding: 12px 16px;
+  resize: none;
+
+  &::placeholder {
+    @extend %form-feedback-fontstyle;
+    // font-size: 12px;
+    // line-height: 1.17;
+    // letter-spacing: 0.01em;
+    color: $form-text-placeholder;
+  }
+  &:focus {
+    @extend %form-feedback-focus;
+  }
+}
+.form-feedback__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  fill: $main-text-second-color;
+  transition: fill $animations;
+
+  .form-feedback__input:focus + & {
+    fill: $main-active-color;
+  }
+}
+
+.form-feedback__checkbox-icon {
+  background-size: contain;
+  background-origin: border-box;
+  margin-right: 7px;
+
+  fill: white;
+  border: 2px solid $main-text-second-color;
+  border-radius: 2px;
+  transition: border $animations, background-color $animations, border-color $animations;
+
+  .form-feedback__checkbox:checked + & {
+    border: 1px solid $main-active-color;
+    border-radius: 2px;
+    background-color: $main-active-color;
+  }
+}
+
+.form-feedback__policy {
+  color: $main-active-color;
+}
+
+.form-feedback__button {
+  @extend %button-md;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

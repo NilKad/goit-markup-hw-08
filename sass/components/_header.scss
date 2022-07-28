@@ -1,0 +1,17 @@
+.header {
+  max-height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid $header-border-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $main-text-second-color;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}

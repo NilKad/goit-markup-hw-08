@@ -1,0 +1,83 @@
+%title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: $main-text-second-color;
+  text-align: center;
+}
+
+%button {
+  text-align: center;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+%button-st {
+  @extend %button;
+  min-width: 73px;
+  height: 38px;
+  padding: 6px 22px;
+
+  line-height: 1.63;
+  font-weight: 500;
+
+  color: $main-text-second-color;
+  background-color: $main-trhid-bg;
+  transition: color $animations, background-color $animations, box-shadow $animations;
+
+  &--current {
+    color: $active-bt-color;
+    background-color: $main-active-color;
+    border: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $active-bt-color;
+    background-color: $active-bt-bg;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+%button-md {
+  @extend %button;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+
+  font-weight: 700;
+  line-height: 1.88;
+
+  color: $main-bg-color;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: background-color $animations;
+
+  &:hover,
+  &:focus {
+    background-color: $active-bt-forma-bg;
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15; */
+  }
+}
+
+%form-feedback-fontstyle {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+%form-feedback-input-textarea {
+  width: 100%;
+  border: 1px solid $border-color-form;
+
+  border-radius: 4px;
+  @extend %form-feedback-fontstyle;
+  font-size: 14px;
+
+  transition: border $animations;
+}
+%form-feedback-focus {
+  border: 1px solid $main-active-color;
+  outline: none;
+}

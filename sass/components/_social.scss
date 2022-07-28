@@ -1,0 +1,39 @@
+/* social block  */
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social__item {
+  content: '';
+}
+
+.social__link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+  border-color: transparent;
+  fill: currentColor;
+
+  justify-content: center;
+  align-items: center;
+
+  .team__social & {
+    color: $border-color-clients;
+  }
+  .footer-item__social & {
+    color: $main-sec-color;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  &:hover {
+    color: $main-sec-color;
+    background-color: $main-active-color;
+  }
+
+  transition: background-color $animations, color $animations;
+}

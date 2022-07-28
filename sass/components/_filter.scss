@@ -1,0 +1,18 @@
+/* Portfolio filter */
+.filter {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+
+  &--mb {
+    margin-bottom: 50px;
+  }
+}
+
+.filter__button {
+  @extend %button-st;
+
+  &--current {
+    @extend %button-st--current;
+  }
+}

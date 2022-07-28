@@ -1,0 +1,39 @@
+/* benefits */
+.benefits {
+  display: flex;
+}
+
+.benefits__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.benefits__icon-div {
+  display: flex;
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: $main-trhid-bg;
+  border-radius: 4px;
+}
+
+.benefits__text,
+.benefits__title {
+  font-size: 14px;
+}
+.benefits__title {
+  @extend %title;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: left;
+}
+.benefits__text {
+  margin-top: 10px;
+  line-height: 1.71;
+}

@@ -1,0 +1,25 @@
+.button-close {
+  /* display: flex; */
+
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  color: $color-black;
+  background-color: initial;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: fill $animations;
+
+  &--position {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: $main-active-color;
+  }
+}

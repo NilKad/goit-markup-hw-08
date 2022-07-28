@@ -1,0 +1,28 @@
+.works {
+  display: flex;
+  gap: 30px;
+}
+
+.works__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-bg-color;
+}
+
+.works__thumb {
+  position: relative;
+}
+.works__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+
+  background-color: $background-work;
+}
