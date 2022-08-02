@@ -6,7 +6,7 @@
 }
 
 .social__item {
-  content: '';
+  // content: '';
 }
 
 .social__link {
@@ -36,4 +36,35 @@
   }
 
   transition: background-color $animations, color $animations;
+}
+
+.social-small {
+  display: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22px;
+
+  letter-spacing: 0.02em;
+
+  color: $main-active-color;
+
+  border: 1px solid red;
+
+  @media screen and (max-width: 767px) {
+    // display: flex;
+    display: block;
+  }
+  .social-small__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+      // border-right: 10px solid red;
+    }
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.social-small__link {
+  // display: block;
 }

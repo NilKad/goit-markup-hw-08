@@ -1,9 +1,28 @@
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  // max-width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+  outline: 1px solid red;
 }
-.container__navigation {
-  margin-right: auto;
-}
+
+// .container__navigation {
+//   @media screen and (max-width: 768px) {
+//     margin-bottom: 100%;
+//   }
+//   @media screen and (min-width: 768px) {
+//     margin-right: auto;
+//   }
+// }

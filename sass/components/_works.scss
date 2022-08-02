@@ -3,6 +3,12 @@
   gap: 30px;
 }
 
+.section.works {
+  @media screen and (max-width: 1197px) {
+    display: none;
+  }
+}
+
 .works__title {
   font-weight: 700;
   font-size: 14px;

@@ -8,6 +8,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $animations;
+  overflow-y: scroll;
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.2);

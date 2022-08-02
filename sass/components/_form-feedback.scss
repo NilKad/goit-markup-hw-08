@@ -27,8 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
 }
 
@@ -52,9 +55,7 @@
 
   &::placeholder {
     @extend %form-feedback-fontstyle;
-    // font-size: 12px;
-    // line-height: 1.17;
-    // letter-spacing: 0.01em;
+
     color: $form-text-placeholder;
   }
   &:focus {

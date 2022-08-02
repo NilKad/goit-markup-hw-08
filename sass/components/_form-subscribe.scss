@@ -1,3 +1,14 @@
+.form-subscribe {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
 .form-subscribe__field {
   width: min-content;
   font-weight: 700;
@@ -5,6 +16,12 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: $main-sec-color;
+
+  @media screen and (max-width: 1199px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .form-subscribe__input {
   margin-top: 20px;
@@ -23,16 +40,24 @@
     font-size: 16px;
     line-height: 1.25;
   }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
 }
 
 .form-subscribe__button {
   @extend %button-md;
-  display: flex;
-  // margin-top: 0;
-  margin-left: 12px;
+  display: inline-flex;
+
+  // margin-left: 12px;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .form-subscribe__icon {
+  // display: block;
   margin-left: 10px;
   fill: $main-sec-color;
 }

@@ -1,0 +1,24 @@
+.menu-button {
+  z-index: 1;
+  background-color: transparent;
+  border: none;
+  fill: currentColor;
+  color: $main-text-second-color;
+
+  &:hover,
+  &:focus {
+    color: $main-active-color;
+  }
+  transition: color $animations;
+}
+.menu-button__cross {
+  display: none;
+}
+.menu-button.is-open {
+  & .menu-button__cross {
+    display: block;
+  }
+  & .menu-button__menu {
+    display: none;
+  }
+}

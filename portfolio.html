@@ -1,313 +1,347 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Портфолио</title>
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.min.css" />
-</head>
-
-<body>
-  <!-- Шапка -->
-  <header class="header">
-    <div class="container header__container">
-      <nav class="navigation container__navigation">
-        <a href="./index.html" class="navigation__logo logo"><span class="logo__first-color">Web</span>Studio</a>
-        <ul class="site-nav">
-          <li class="site-nav__item">
-            <a href="./index.html" class="site-nav__link ">Студия</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="" class="site-nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
-      <ul class="contacts">
-        <li class="contacts__item">
-          <a href="mailto:info@devstudio.com" class="contacts__link">
-            <svg class="contacts__icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>info@devstudio.com</a>
-        </li>
-        <li class="contacts__item">
-          <a href="tel:+380961111111" class="contacts__link">
-            <svg class="contacts__icon" width="16" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <section class="section">
-      <div class="container ">
-        <h1 class="visually-hidden">Портфолио</h1>
-        <ul class="filter filter--mb">
-          <li class="filter__item">
-            <button type="button" class="filter__button filter__button--current">Все</button>
-          </li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Веб-сайты</button>
-          </li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Приложения</button>
-          </li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Дизайн</button>
-          </li>
-          <li class="filter__item">
-            <button type="button" class="filter__button">Маркетинг</button>
-          </li>
-        </ul>
-
-        <ul class="portfolio">
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/tehnokryak.jpg" alt="Технокряк" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Технокряк</h2>
-                <p class="portfolio__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/poster-new-orlean-vs-golden-star.jpg" alt="Постер New Orlean vs Golden Star"
-                  width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
-                <p class="portfolio__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/restoran-seafood.jpg" alt="Ресторан Seafood" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Ресторан Seafood</h2>
-                <p class="portfolio__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/project-prime.jpg" alt="Проект Primed" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Проект Primed</h2>
-                <p class="portfolio__text">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/project-boxes.jpg" alt="Проект Boxesd" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Проект Boxes</h2>
-                <p class="portfolio__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/inspiration-has-no-border.jpg" alt="Inspiration has no Borders" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Inspiration has no Borders</h2>
-                <p class="portfolio__text">Веб-сайт</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/izdanie-limited-edition.jpg" alt="Издание Limited Edition" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Издание Limited Edition</h2>
-                <p class="portfolio__text">Дизайн</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/project-lab.jpg" alt="Проект LAB" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Проект LAB</h2>
-                <p class="portfolio__text">Маркетинг</p>
-              </div>
-            </a>
-          </li>
-          <li class="portfolio__item">
-            <a href="" class="portfolio__link">
-              <div class="portfolio__box">
-                <img src="./images/growing-business.jpg" alt="Growing Business" width="370" />
-                <div class="portfolio__overlay">
-                  <p class="portfolio__overlay-text">
-                    Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вскоре
-                    приставка океана текстами
-                    подпоясал меня необходимыми не по всей своего!
-                  </p>
-                </div>
-              </div>
-              <div class="portfofilo__meta">
-                <h2 class="portfolio__title">Growing Business</h2>
-                <p class="portfolio__text">Приложение</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-item container ">
-      <div class="footer-item__address">
-        <a href="./index.html" class="footer-item__logo logo"><span class="logo__first-color">Web</span>Studio</a>
-        <address class="footer-address">
-          <ul>
-            <li class="footer-address__list">
-              <a href="https://goo.gl/maps/WHBGWg1it3eYbs4MA" class="footer-address__link" target="_blank">г. Киев,
-                пр-т Леси Украинки, 26</a>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="navigation container__navigation">
+          <a href="./index.html" class="navigation__logo logo">
+            <span class="logo__first-color">Web</span>
+            Studio
+          </a>
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link">Студия</a>
             </li>
-            <li class="footer-address__list"><a href="mailto:info@example.com"
-                class="footer-address__link link">info@example.com</a><br />
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link site-nav__link--current"></a>
+                Портфолио
+              </a>
             </li>
-            <li class="footer-address__list">
-              <a href="tel:+380991111111" class="footer-address__link link">+38 099 111 11 11</a>
+            <li class="site-nav__item">
+              <a href="" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </address>
-      </div>
-      <div class="footer-item__socblock">
-        <p class="footer__text text">присоединяйтесь</p>
-        <ul class="social footer-item__social">
-          <li class="social__item">
-            <a href="" class="social__link">
-              <svg class="social__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-instagram"></use>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
+              info@devstudio.com
             </a>
           </li>
-          <li class="social__item">
-            <a href="" class="social__link">
-              <svg class="social__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg></a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link">
-              <svg class="social__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-facebook"></use>
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__link">
+              <svg class="contacts__icon" width="16" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="" class="social__link">
-              <svg class="social__icon" width="20" height="20">
-                <use href="./images/icons.svg#icon-linkedin"></use>
-              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
       </div>
-      <form class="form-subscribe footer-item__form-subscribe">
-        <!-- <div class="footer__text text">Подпишитесь на рассылку</div> -->
-        <label class="form-subscribe__field">
-          Подпишитесь на рассылку
-          <input type="email" name="email" class="form-subscribe__input" placeholder="E-mail">
-        </label>
-        <button type="submit" class="form-subscribe__button">Подписаться
-          <svg class="form-subscribe__icon" width="24" height="24">
-            <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg>
-        </button>
-      </form>
-    </div>
-  </footer>
+    </header>
 
-</body>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter filter--mb">
+            <li class="filter__item">
+              <button type="button" class="filter__button filter__button--current">Все</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button type="button" class="filter__button">Маркетинг</button>
+            </li>
+          </ul>
 
+          <ul class="portfolio">
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img src="./images/tehnokryak.jpg" alt="Технокряк" width="370" />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Технокряк</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img
+                    src="./images/poster-new-orlean-vs-golden-star.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img src="./images/restoran-seafood.jpg" alt="Ресторан Seafood" width="370" />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Ресторан Seafood</h2>
+                  <p class="portfolio__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img src="./images/project-prime.jpg" alt="Проект Primed" width="370" />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Проект Primed</h2>
+                  <p class="portfolio__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img src="./images/project-boxes.jpg" alt="Проект Boxesd" width="370" />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Проект Boxes</h2>
+                  <p class="portfolio__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img
+                    src="./images/inspiration-has-no-border.jpg"
+                    alt="Inspiration has no Borders"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Inspiration has no Borders</h2>
+                  <p class="portfolio__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img
+                    src="./images/izdanie-limited-edition.jpg"
+                    alt="Издание Limited Edition"
+                    width="370"
+                  />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Издание Limited Edition</h2>
+                  <p class="portfolio__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img src="./images/project-lab.jpg" alt="Проект LAB" width="370" />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Проект LAB</h2>
+                  <p class="portfolio__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="" class="portfolio__link">
+                <div class="portfolio__box">
+                  <img src="./images/growing-business.jpg" alt="Growing Business" width="370" />
+                  <div class="portfolio__overlay">
+                    <p class="portfolio__overlay-text">
+                      Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные
+                      тексты. Вскоре приставка океана текстами подпоясал меня необходимыми не по
+                      всей своего!
+                    </p>
+                  </div>
+                </div>
+                <div class="portfofilo__meta">
+                  <h2 class="portfolio__title">Growing Business</h2>
+                  <p class="portfolio__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-item container">
+        <div class="footer-item__address">
+          <a href="./index.html" class="footer-item__logo logo">
+            <span class="logo__first-color">Web</span>
+            Studio
+          </a>
+          <address class="footer-address">
+            <ul>
+              <li class="footer-address__list">
+                <a
+                  href="https://goo.gl/maps/WHBGWg1it3eYbs4MA"
+                  class="footer-address__link"
+                  target="_blank"
+                >
+                  г. Киев, пр-т Леси Украинки, 26
+                </a>
+              </li>
+              <li class="footer-address__list">
+                <a href="mailto:info@example.com" class="footer-address__link link">
+                  info@example.com
+                </a>
+                <br />
+              </li>
+              <li class="footer-address__list">
+                <a href="tel:+380991111111" class="footer-address__link link">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-item__socblock">
+          <p class="footer__text text">присоединяйтесь</p>
+          <ul class="social footer-item__social">
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="" class="social__link">
+                <svg class="social__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="form-subscribe footer-item__form-subscribe">
+          <!-- <div class="footer__text text">Подпишитесь на рассылку</div> -->
+          <label class="form-subscribe__field">
+            Подпишитесь на рассылку
+            <input type="email" name="email" class="form-subscribe__input" placeholder="E-mail" />
+          </label>
+          <button type="submit" class="form-subscribe__button">
+            Подписаться
+            <svg class="form-subscribe__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+  </body>
 </html>
