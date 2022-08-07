@@ -8,12 +8,14 @@
   font-size: 14px;
   line-height: 1.71;
 }
+
 .footer__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+
 .footer-item__socblock {
   // fill: $main-sec-color;
 }
@@ -22,15 +24,13 @@
   color: $footer-sec-color;
   font-style: normal;
   margin-top: 20px;
-
-  // @media screen and (max-width: 1199px) {
-  // }
 }
 
 .footer-address__list {
   &:not(:first-child) {
     margin-top: 9px;
   }
+
   &:first-child {
     color: $main-sec-color;
   }
@@ -46,23 +46,24 @@
 }
 
 .footer-item {
+
   // display: flex;
   // align-items: baseline;
   @media screen and (max-width: 1199px) {
-    & > *:not(:last-child) {
+    &>*:not(:last-child) {
       margin-bottom: 60px;
       text-align: center;
     }
   }
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: space-around;
   }
+
   @media screen and (min-width: 1200px) {
-    // display: flex;
-    // align-items: baseline;
     flex-wrap: nowrap;
   }
 }
@@ -78,22 +79,21 @@
     margin-left: 0;
   }
 }
+
 .footer-item__logo {
   color: $main-logo-color-footer;
 }
 
 .footer-item__socblock {
-  // margin-left: 70px;
   @media screen and (min-width: 768px) {
     margin-left: 165px;
     margin-right: 74px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 93px;
   }
-
-  // margin-left: 70px;
 }
 
 .footer-item__form-subscribe {

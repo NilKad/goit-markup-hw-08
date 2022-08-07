@@ -1,8 +1,6 @@
 .team {
   display: block;
 
-  // display: flex;
-  // gap: 30px;
   @media screen and (min-width: 480px) {}
 
   @media screen and (min-width: 768px) {
@@ -15,15 +13,6 @@
     flex-wrap: nowrap;
   }
 }
-
-// .team-block__title {
-//   @extend %title;
-//   margin-bottom: 50px;
-
-//   @media screen and (min-width: 1200px) {
-//     margin-bottom: 50px;
-//   }
-// }
 
 .team__item {
   background: $main-bg-color;

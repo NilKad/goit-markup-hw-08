@@ -4,13 +4,10 @@
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
-  // width: 170px;
-  // height: 92px;
 }
 
 .clients__item {
 
-  // height: 92px;
   @media screen and (max-width: 767px) {
     width: calc((100% - 30px) / 2);
   }
@@ -20,21 +17,16 @@
   }
 
   @media screen and (min-width: 1200px) {
-    // width: 100%;
     width: 170px;
     flex-wrap: nowrap;
   }
-
-  // width: calc((100% - 30px) / 2);
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  // width: 170px;
   height: 92px;
-  /* content: ''; */
 
   border: 1px solid $border-color-clients;
   border-radius: 4px;

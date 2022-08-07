@@ -1,18 +1,13 @@
-.navigation,
-.site-nav {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
+// .navigation,
+// .site-nav {
 
-}
+// }
 
 .site-nav {
   display: flex;
   font-size: 30px;
 
-  @media screen and (max-width: 420px) {
-    // font-size: 20px;
-  }
+  @media screen and (max-width: 420px) {}
 
   @media screen and (min-width: 421px) {
     font-size: 40px;
@@ -47,7 +42,6 @@
 
 .site-nav__link {
   display: block;
-  // margin-bottom: 32px;
   transition: color $animations;
 
   &:hover,
@@ -57,7 +51,6 @@
   }
 
   @media screen and (min-width: 768px) {
-    // margin-bottom: 0;
     padding-top: 32px;
     padding-bottom: 32px;
 

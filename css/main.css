@@ -100,7 +100,6 @@ body.modal-open {
 }
 .hero__button:hover, .form-feedback__button:hover, .form-subscribe__button:hover, .hero__button:focus, .form-feedback__button:focus, .form-subscribe__button:focus {
   background-color: #188ce8;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15; */
 }
 
 .form-feedback__textarea::-webkit-input-placeholder {
@@ -1161,7 +1160,6 @@ body.modal-open {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
-  /* content: ''; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;

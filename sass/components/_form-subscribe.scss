@@ -1,10 +1,7 @@
 .form-subscribe {
   text-align: center;
-  // width: 100vw;
 
-  @media screen and (max-width: 767px) {
-    // width: 100vw;
-  }
+  @media screen and (max-width: 767px) {}
 
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -36,7 +33,6 @@
   padding-left: 16px;
   padding-right: 16px;
   max-width: 358px;
-  // width: 100%;
   height: 50px;
   background-color: transparent;
   border-color: $footer-form-border;
@@ -51,7 +47,6 @@
   }
 
   @media screen and (max-width: 1199px) {
-    // width: 450px;
     margin-bottom: 20px;
     max-width: 450px;
     width: 100%;
@@ -66,7 +61,6 @@
   @extend %button-md;
   display: inline-flex;
 
-  // margin-left: 12px;
   align-items: center;
 
   @media screen and (min-width: 1200px) {
@@ -75,7 +69,6 @@
 }
 
 .form-subscribe__icon {
-  // display: block;
   margin-left: 10px;
   fill: $main-sec-color;
 }
