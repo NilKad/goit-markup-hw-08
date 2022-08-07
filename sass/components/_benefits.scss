@@ -2,6 +2,7 @@
 .benefits {
   display: block;
   gap: 30px;
+
   // display: flex;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -12,16 +13,19 @@
 
 .benefits__item {
   min-width: auto;
+
   // align-items: center;
   // justify-content: center;
   // min-height: auto;
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
   }
+
   @media screen and (min-width: 768px) {
     // min-width: 354px;
     width: calc((100% - 60px) / 2);
   }
+
   @media screen and (min-width: 1200px) {
     width: 270px;
     // flex-wrap: nowrap;
@@ -44,15 +48,18 @@
 .benefits__title {
   font-size: 14px;
 }
+
 .benefits__title {
   @extend %title;
   line-height: 1.14;
   text-transform: uppercase;
   text-align: center;
+
   @media screen and (min-width: 768px) {
     text-align: left;
   }
 }
+
 .benefits__text {
   margin-top: 10px;
   line-height: 1.71;

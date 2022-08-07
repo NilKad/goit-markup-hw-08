@@ -3,13 +3,14 @@
 
   // display: flex;
   // gap: 30px;
-  @media screen and (min-width: 480px) {
-  }
+  @media screen and (min-width: 480px) {}
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
   }
+
   @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
@@ -30,7 +31,10 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
   }
 
   @media screen and (min-width: 768px) {
@@ -49,9 +53,11 @@
   @extend %title;
   font-weight: 500;
 }
+
 .team__text {
   margin-top: 10px;
 }
+
 .team__meta {
   padding-top: 30px;
   padding-bottom: 30px;

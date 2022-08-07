@@ -55,11 +55,7 @@
           </li>
         </ul>
         <ul class="social-small menu__social-small">
-          <li><a href=""></a>1</li>
-          <li><a href=""></a>2</li>
-          <li><a href=""></a>3</li>
-          <li><a href=""></a>4</li>
-          <!-- <li class="social-small__item">
+          <li class="social-small__item">
             <a href="" class="social-small__link">Instagramm</a>
           </li>
           <li class="social-small__item">
@@ -70,7 +66,7 @@
           </li>
           <li class="social-small__item">
             <a href="" class="social-small__link">Linkedin</a>
-          </li> -->
+          </li>
         </ul>
       </div>
 
@@ -82,6 +78,7 @@
       </button>
     </div>
   </header>
+
   <!-- Уникальный контеест -->
   <main>
     <!-- Main -->
@@ -154,27 +151,21 @@
         <h2 class="section__title">Чем мы занимаемся</h2>
         <ul class="works">
           <li class="works__item">
-            <div class="works__thumb">
-              <img src="./images/zan1.jpg" alt="Занимаемся разработкой" width="370" />
-              <div class="works__box">
-                <h3 class="works__title">Десктопные приложения</h3>
-              </div>
+            <img src="./images/works/zan1.jpg" alt="Занимаемся разработкой" width="370" />
+            <div class="works__box">
+              <h3 class="works__title">Десктопные приложения</h3>
             </div>
           </li>
           <li class="works__item">
-            <div class="works__thumb">
-              <img src="./images/zan2.jpg" alt="Занимаемся оптимизацией" width="370" />
-              <div class="works__box">
-                <h3 class="works__title">Мобильные приложения</h3>
-              </div>
+            <img src="./images/works/zan2.jpg" alt="Занимаемся оптимизацией" width="370" />
+            <div class="works__box">
+              <h3 class="works__title">Мобильные приложения</h3>
             </div>
           </li>
           <li class="works__item">
-            <div class="works__thumb">
-              <img src="./images/zan3.jpg" alt="Занимаемся подбором" width="370" />
-              <div class="works__box">
-                <h3 class="works__title">Дизайнерские решения</h3>
-              </div>
+            <img src="./images/works/zan3.jpg" alt="Занимаемся подбором" width="370" />
+            <div class="works__box">
+              <h3 class="works__title">Дизайнерские решения</h3>
             </div>
           </li>
         </ul>
@@ -186,7 +177,19 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="team">
           <li class="team__item">
-            <img src="./images/igor-demyanenko.jpg" alt="Игорь Демьяненко" min-width="270" />
+            <picture>
+              <source srcset="
+                    ./images/teams/igor-demyanenko@1x-desktop.jpg 1x,
+                    ./images/teams/igor-demyanenko@2x-desktop.jpg 2x
+                  " media="(min-width: 1200px)" />
+              <source srcset=". /images/teams/igor-demyanenko@1x-tablet.jpg 1x,
+                ./images/teams/igor-demyanenko@2x-tablet.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="
+                    ./images/teams/igor-demyanenko@1x-phone.jpg 1x,
+                    ./images/teams/igor-demyanenko@2x-phone.jpg 2x
+                  " media="(max-width: 767px)" />
+              <img src="./images/teams/igor-demyanenko@1x-desktop.jpg" alt="Игорь Демьяненко" min-width="270" />
+            </picture>
             <div class="team__meta">
               <h3 class="team__title">Игорь Демьяненко</h3>
               <p class="team__text">Product Designer</p>
@@ -223,7 +226,15 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/olga-repina.jpg" alt="Ольга Репина" min-width="270" />
+            <picture>
+              <source srcset="./images/teams/olga-repina@1x-desktop.jpg 1x,
+                ./images/teams/olga-repina@2x-desktop.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset=". /images/teams/olga-repina@1x-tablet.jpg 1x,
+                ./images/teams/olga-repina@2x-tablet.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teams/olga-repina@1x-phone.jpg 1x,
+                ./images/teams/olga-repina@2x-phone.jpg 2x" media="(max-width: 767px)" />
+              <img src="./images/teams/olga-repina@1x-desktop.jpg" alt="Игорь Демьяненко" min-width="270" />
+            </picture>
             <div class="team__meta">
               <h3 class="team__title">Ольга Репина</h3>
               <p class="team__text">Frontend Developer</p>
@@ -260,7 +271,15 @@
             </div>
           </li>
           <li class="team__item">
-            <img src="./images/nikolay-tarasov.jpg" alt="Николай Тарасов" min-width="270" />
+            <picture>
+              <source srcset="./images/teams/nikolay-tarasov@1x-desktop.jpg 1x,
+                ./images/teams/nikolay-tarasov@2x-desktop.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset=". /images/teams/nikolay-tarasov@1x-tablet.jpg 1x,
+                ./images/teams/nikolay-tarasov@2x-tablet.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teams/nikolay-tarasov@1x-phone.jpg 1x,
+                ./images/teams/nikolay-tarasov@2x-phone.jpg 2x" media="(max-width: 767px)" />
+              <img src="./images/teams/nikolay-tarasov@1x-desktop.jpg" alt="Игорь Демьяненко" min-width="270" />
+            </picture>
             <div class="team__meta">
               <h3 class="team__title">Николай Тарасов</h3>
               <p class="team__text">Marketing</p>
@@ -296,8 +315,17 @@
               </ul>
             </div>
           </li>
+
           <li class="team__item">
-            <img src="./images/mihail-ermakov.jpg" alt="Михаил Ермаков" min-width="270" />
+            <picture>
+              <source srcset="./images/teams/mihail-ermakov@1x-desktop.jpg 1x,
+                ./images/teams/mihail-ermakov@2x-desktop.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset=". /images/teams/mihail-ermakov@1x-tablet.jpg 1x,
+                ./images/teams/mihail-ermakov@2x-tablet.jpg 2x" media="(min-width: 768px)" />
+              <source srcset="./images/teams/mihail-ermakov@1x-phone.jpg 1x,
+                ./images/teams/mihail-ermakov@2x-phone.jpg 2x" media="(max-width: 767px)" />
+              <img src="./images/teams/mihail-ermakov@1x-desktop.jpg" alt="Игорь Демьяненко" min-width="270" />
+            </picture>
             <div class="team__meta">
               <h3 class="team__title">Михаил Ермаков</h3>
               <p class="team__text">UI Designer</p>
