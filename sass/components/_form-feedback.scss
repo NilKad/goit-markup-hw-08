@@ -22,6 +22,7 @@
   &--checkbox {
     margin-bottom: 20px;
   }
+
   &--checkbox {
     margin-bottom: 30px;
     display: flex;
@@ -29,6 +30,7 @@
     justify-content: center;
     font-size: 12px;
     line-height: 1.71;
+
     @media screen and (min-width: 1200px) {
       font-size: 14px;
     }
@@ -58,10 +60,12 @@
 
     color: $form-text-placeholder;
   }
+
   &:focus {
     @extend %form-feedback-focus;
   }
 }
+
 .form-feedback__icon {
   position: absolute;
   left: 12px;
@@ -69,7 +73,7 @@
   fill: $main-text-second-color;
   transition: fill $animations;
 
-  .form-feedback__input:focus + & {
+  .form-feedback__input:focus+& {
     fill: $main-active-color;
   }
 }
@@ -84,7 +88,7 @@
   border-radius: 2px;
   transition: border $animations, background-color $animations, border-color $animations;
 
-  .form-feedback__checkbox:checked + & {
+  .form-feedback__checkbox:checked+& {
     border: 1px solid $main-active-color;
     border-radius: 2px;
     background-color: $main-active-color;
