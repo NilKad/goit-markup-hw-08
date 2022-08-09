@@ -6,19 +6,20 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
 .benefits__item {
   min-width: auto;
 
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
   }
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
   @media screen and (min-width: 1200px) {

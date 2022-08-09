@@ -36,15 +36,6 @@
   }
 }
 
-// .contacts__item:not(:last-child) {
-
-//   @media screen and (min-width: 768px) {
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//   }
-// }
-
 .contacts__link {
   display: flex;
 
@@ -62,6 +53,8 @@
 }
 
 .contacts__icon {
+  fill: currentColor;
+
   @media screen and (max-width: 767px) {
     display: none;
   }

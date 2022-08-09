@@ -69,10 +69,10 @@
 }
 
 .footer-item__address {
-  flex-grow: 1;
+
 
   @media screen and (min-width: 768px) {
-    margin-left: 61px;
+    // margin-left: 61px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -86,13 +86,14 @@
 
 .footer-item__socblock {
   @media screen and (min-width: 768px) {
-    margin-left: 165px;
-    margin-right: 74px;
+    // margin-left: 165px;
+    // margin-right: 74px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 93px;
+    flex-grow: 1;
   }
 }
 

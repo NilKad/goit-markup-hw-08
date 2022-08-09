@@ -1,12 +1,13 @@
 .works {
-  display: flex;
-  gap: 30px;
-}
-
-.section.works {
   @media screen and (max-width: 1197px) {
     display: none;
   }
+
+}
+
+.works__list {
+  display: flex;
+  gap: 30px;
 }
 
 .works__title {
@@ -28,7 +29,7 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 370px;
+  max-width: 370px;
   height: 70px;
 
   background-color: $background-work;
