@@ -77,6 +77,7 @@
 
   @media screen and (min-width: 1200px) {
     margin-left: 0;
+    flex-grow: 1;
   }
 }
 
@@ -93,7 +94,7 @@
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
     margin-right: 93px;
-    flex-grow: 1;
+    // flex-grow: 1;
   }
 }
 

@@ -1249,6 +1249,9 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .footer-item__address {
     margin-left: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
   }
 }
 
@@ -1260,9 +1263,6 @@ body.modal-open {
   .footer-item__socblock {
     margin-left: 70px;
     margin-right: 93px;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
   }
 }
 
